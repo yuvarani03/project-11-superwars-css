@@ -1,4 +1,60 @@
-.footer{
-  margin-left : 80px;
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  margin-left: 12%;
+}
+.grid-container>div{
+  border: 2px solid rgb(182, 179, 179);
+  border-radius: 20px;
+  padding:20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.grid-container .m1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-container .f2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-container .m2{
+  grid-column: 5/6;
+  grid-row: 1/2;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-container .f2{
+  grid-column: 6/7;
+  grid-row: 1/2;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-container .scores{
+  grid-row: 1/2;
+  grid-column: 3/5;
+  justify-self: center;
+  border-style: none;
+  margin-top: -10%;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+ span{
+   font-size: 40px;
+   font-weight: bold;
+ }
+
+ .footer{
+  margin-left : 12%;
   font-size : 18px;
 }
+
+
+
